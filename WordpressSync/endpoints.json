@@ -1,0 +1,96 @@
+{
+  "$schema": "./endpoints.schema.json",
+  "meta": {
+    "title": "endpoints config file",
+    "description": "endpoints config file"
+  },
+  "data": {
+    "projects": [
+{
+        "name": "headless.cannabis.ca.gov",
+        "description": "",
+        "enabled": true,
+        "enabledLocal": false,
+        "ReportingChannel_Slack": "C02G6PETB9B",
+        "WordPressSource": {
+          "url": "https://cannabis.ca.gov",
+          "tags_exclude": []
+        },
+        "GitHubTarget": {
+          "Owner": "cagov",
+          "Repo": "cannabis.ca.gov",
+          "Branch": "main",
+          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
+        }
+      },
+      {
+        "name": "staging.cannabis.ca.gov",
+        "description": "",
+        "enabled": true,
+        "enabledLocal": false,
+        "ReportingChannel_Slack": "C02G6PETB9B",
+        "WordPressSource": {
+          "url": "https://cannabis.ca.gov",
+          "tags_exclude": []
+        },
+        "GitHubTarget": {
+          "Owner": "cagov",
+          "Repo": "cannabis.ca.gov",
+          "Branch": "staging",
+          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
+        }
+      },
+      {
+        "name": "development.cannabis.ca.gov",
+        "description": "",
+        "enabled": true,
+        "enabledLocal": false,
+        "ReportingChannel_Slack": "C02G6PETB9B",
+        "WordPressSource": {
+          "url": "https://cannabis.ca.gov",
+          "tags_exclude": []
+        },
+        "GitHubTarget": {
+          "Owner": "cagov",
+          "Repo": "cannabis.ca.gov",
+          "Branch": "development",
+          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
+        }
+      },
+      {
+        "name": "staging-pantheon.cannabis.ca.gov",
+        "description": "",
+        "enabled": true,
+        "enabledLocal": false,
+        "ReportingChannel_Slack": "C02G6PETB9B",
+        "WordPressSource": {
+          "url": "https://live-cagov-dcc.pantheonsite.io",
+          "tags_exclude": []
+        },
+        "GitHubTarget": {
+          "Owner": "cagov",
+          "Repo": "cannabis.ca.gov",
+          "Branch": "staging-pantheon",
+          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
+        }
+      },
+      {
+        "name": "development-pantheon.cannabis.ca.gov",
+        "description": "",
+        "enabled": true,
+        "enabledLocal": false,
+        "ReportingChannel_Slack": "C02G6PETB9B",
+        "WordPressSource": {
+          "url": "https://dev-cagov-dcc.pantheonsite.io",
+          "tags_exclude": []
+        },
+        "GitHubTarget": {
+          "Owner": "cagov",
+          "Repo": "cannabis.ca.gov",
+          "Branch": "development-pantheon",
+          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
+        }
+      }
+    ]
+  }
+}
